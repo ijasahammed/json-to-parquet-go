@@ -19,7 +19,7 @@ func main() {
 		return
 	}
 
-	jsonFilePtr := "file.json"
+	jsonFilePtr := "example/file.json"
 
 	file, err := os.Open(jsonFilePtr)
 	if err != nil {
