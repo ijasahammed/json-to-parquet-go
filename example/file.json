@@ -1,0 +1,2684 @@
+[
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2021-09-09T20:42:28+0000",
+        "crn": "us-east:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:c4t73d1w08pakj2j49og::",
+        "datacenter": "wdc04",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "c4t73d1w08pakj2j49og",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-cp-wdc-ce01013c3878619f1bce5202965c2f08-0000.us-east.containers.appdomain.cloud",
+            "message": "Some Ingress components are in warning state check `ibmcloud ks ingress status-report get` command.",
+            "secretName": "pdns-prod-cp-wdc-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "warning"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-16T04:08:06+0000",
+            "modifiedDate": "2021-09-09T20:43:10+0000"
+        },
+        "location": "Washington D.C.",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c2.private.us-east.containers.cloud.ibm.com:23650",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-cp-wdc",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "us-east",
+        "resourceGroup": "707b49fa9c6d4f4e881c89de81c90f5a",
+        "resourceGroupName": "PDNS-CP-Production",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c2.private.us-east.containers.cloud.ibm.com:23650",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 9,
+        "workerZones": [
+            "wdc04",
+            "wdc06",
+            "wdc07"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2021-10-25T10:51:58+0000",
+        "crn": "us-east:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:c5r8ojlw0hafatji7qpg::",
+        "datacenter": "tor01",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "c5r8ojlw0hafatji7qpg",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-tor01-ce01013c3878619f1bce5202965c2f08-0000.ca-tor.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-tor01-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-16T02:05:32+0000",
+            "modifiedDate": "2021-10-25T10:53:21+0000"
+        },
+        "location": "tor",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c3.private.tor01.containers.cloud.ibm.com:29876",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-tor01",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "us-east",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c3.private.tor01.containers.cloud.ibm.com:29876",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "tor01"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-30T18:29:49+0000",
+            "actionTriggerDate": "2020-07-30T18:12:29+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-12-10T23:28:10+0000",
+        "crn": "us-east:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bno2k2iw0jtjiolgpnpg::",
+        "datacenter": "wdc04",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bno2k2iw0jtjiolgpnpg",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-wdc04-ce01013c3878619f1bce5202965c2f08-0001.us-east.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-wdc04-ce01013c3878619f1bce5202965c2f08-0001",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-16T00:50:10+0000",
+            "modifiedDate": "2019-12-10T23:28:40+0000"
+        },
+        "location": "Washington D.C.",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c1.private.us-east.containers.cloud.ibm.com:32470",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-wdc04",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "us-east",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c1.private.us-east.containers.cloud.ibm.com:32470",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "wdc04"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-29T20:30:15+0000",
+            "actionTriggerDate": "2020-07-29T20:12:29+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-12-10T22:30:07+0000",
+        "crn": "us-east:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bno1orrw0qnk1i1c3mh0::",
+        "datacenter": "wdc06",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bno1orrw0qnk1i1c3mh0",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-wdc06-ce01013c3878619f1bce5202965c2f08-0001.us-east.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-wdc06-ce01013c3878619f1bce5202965c2f08-0001",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-16T02:30:38+0000",
+            "modifiedDate": "2019-12-10T22:30:32+0000"
+        },
+        "location": "Washington D.C.",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c2.private.us-east.containers.cloud.ibm.com:30937",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-wdc06",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "us-east",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c2.private.us-east.containers.cloud.ibm.com:30937",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "wdc06"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-30T18:28:53+0000",
+            "actionTriggerDate": "2020-07-30T18:12:55+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-12-10T22:31:39+0000",
+        "crn": "us-east:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bno1pipw004m4vifccag::",
+        "datacenter": "wdc07",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bno1pipw004m4vifccag",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-wdc07-ce01013c3878619f1bce5202965c2f08-0001.us-east.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-wdc07-ce01013c3878619f1bce5202965c2f08-0001",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-15T01:47:21+0000",
+            "modifiedDate": "2019-12-10T22:32:04+0000"
+        },
+        "location": "Washington D.C.",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c1.private.us-east.containers.cloud.ibm.com:25206",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-wdc07",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "us-east",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c1.private.us-east.containers.cloud.ibm.com:25206",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "wdc07"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-29T19:03:03+0000",
+            "actionTriggerDate": "2020-07-29T18:48:43+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-10-25T16:27:54+0000",
+        "crn": "au-syd:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bmpi52ms078i9sm0sni0::",
+        "datacenter": "syd01",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bmpi52ms078i9sm0sni0",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-syd01.au-syd.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-syd01",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-14T17:56:11+0000",
+            "modifiedDate": "2019-10-25T16:29:06+0000"
+        },
+        "location": "syd",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c1.private.au-syd.containers.cloud.ibm.com:32431",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-syd01",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "au-syd",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c1.private.au-syd.containers.cloud.ibm.com:32431",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "syd01"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-29T19:50:33+0000",
+            "actionTriggerDate": "2020-07-29T19:34:00+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-10-25T16:31:19+0000",
+        "crn": "au-syd:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bmpi6lrs079prvu0snig::",
+        "datacenter": "syd04",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bmpi6lrs079prvu0snig",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-syd04.au-syd.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-syd04",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-14T16:35:27+0000",
+            "modifiedDate": "2019-10-25T16:32:11+0000"
+        },
+        "location": "syd",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c1.private.au-syd.containers.cloud.ibm.com:30219",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-syd04",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "au-syd",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c1.private.au-syd.containers.cloud.ibm.com:30219",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "syd04"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-29T18:01:40+0000",
+            "actionTriggerDate": "2020-07-29T17:48:02+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-10-25T16:32:26+0000",
+        "crn": "au-syd:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bmpi76js0i8clr60snj0::",
+        "datacenter": "syd05",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bmpi76js0i8clr60snj0",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-syd05.au-syd.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-syd05",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-14T18:56:13+0000",
+            "modifiedDate": "2019-10-25T16:33:56+0000"
+        },
+        "location": "syd",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c1.private.au-syd.containers.cloud.ibm.com:30957",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-syd05",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "au-syd",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c1.private.au-syd.containers.cloud.ibm.com:30957",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "syd05"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-08-06T17:51:52+0000",
+            "actionTriggerDate": "2020-08-06T17:36:37+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-07-19T15:15:26+0000",
+        "crn": "us-south:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bkott3ld04me4oaak7og::",
+        "datacenter": "dal12",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bkott3ld04me4oaak7og",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "dev-dp.us-south.containers.appdomain.cloud",
+            "message": "Some Ingress components are in warning state check `ibmcloud ks ingress status-report get` command.",
+            "secretName": "dev-dp",
+            "status": "warning"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-19T02:02:23+0000",
+            "modifiedDate": "2019-07-19T15:15:51+0000"
+        },
+        "location": "dal",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c7.private.us-south.containers.cloud.ibm.com:25661",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "dev-dp",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "us-south",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c7.private.us-south.containers.cloud.ibm.com:25661",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 4,
+        "workerZones": [
+            "dal12"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2021-09-09T20:41:06+0000",
+        "crn": "us-south:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:c4t72omd0p6lvjacqc7g::",
+        "datacenter": "dal10",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "c4t72omd0p6lvjacqc7g",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-cp-dal-ce01013c3878619f1bce5202965c2f08-0000.us-south.containers.appdomain.cloud",
+            "message": "Some Ingress components are in warning state check `ibmcloud ks ingress status-report get` command.",
+            "secretName": "pdns-prod-cp-dal-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "warning"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-16T23:19:02+0000",
+            "modifiedDate": "2021-09-09T20:42:43+0000"
+        },
+        "location": "dal",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c113.private.us-south.containers.cloud.ibm.com:30939",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-cp-dal",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "us-south",
+        "resourceGroup": "707b49fa9c6d4f4e881c89de81c90f5a",
+        "resourceGroupName": "PDNS-CP-Production",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c113.private.us-south.containers.cloud.ibm.com:30939",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 9,
+        "workerZones": [
+            "dal10",
+            "dal12",
+            "dal13"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-08-06T22:20:00+0000",
+            "actionTriggerDate": "2020-08-06T22:06:25+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-08-06T16:11:14+0000",
+        "crn": "us-south:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bl4qd8ld0gav5i7e4ekg::",
+        "datacenter": "dal10",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bl4qd8ld0gav5i7e4ekg",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-dal10.us-south.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-dal10",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-19T04:01:08+0000",
+            "modifiedDate": "2019-08-06T16:11:38+0000"
+        },
+        "location": "Dallas",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c7.private.us-south.containers.cloud.ibm.com:31732",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-dal10",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "us-south",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c7.private.us-south.containers.cloud.ibm.com:31732",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "dal10"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-08-04T15:21:32+0000",
+            "actionTriggerDate": "2020-08-04T15:06:39+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-08-19T19:02:56+0000",
+        "crn": "us-south:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bldf4o1d0h87ah26jltg::",
+        "datacenter": "dal12",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bldf4o1d0h87ah26jltg",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-dal12.us-south.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-dal12",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-18T16:40:43+0000",
+            "modifiedDate": "2019-08-19T19:03:20+0000"
+        },
+        "location": "dal",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c7.private.us-south.containers.cloud.ibm.com:24206",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-dal12",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "us-south",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c7.private.us-south.containers.cloud.ibm.com:24206",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "dal12"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-09-08T18:55:12+0000",
+            "actionTriggerDate": "2020-09-08T18:38:26+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-08-06T16:11:50+0000",
+        "crn": "us-south:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bl4qdhhd06m5r1nrrts0::",
+        "datacenter": "dal13",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bl4qdhhd06m5r1nrrts0",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-dal13.us-south.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-dal13",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-19T01:00:49+0000",
+            "modifiedDate": "2019-08-06T16:12:25+0000"
+        },
+        "location": "dal",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c7.private.us-south.containers.cloud.ibm.com:25445",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-dal13",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "us-south",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c7.private.us-south.containers.cloud.ibm.com:25445",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "dal13"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2021-10-25T10:54:53+0000",
+        "crn": "us-south:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:c5r8pvcd0midfvnn0h3g::",
+        "datacenter": "sao01",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "c5r8pvcd0midfvnn0h3g",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-sao01-ce01013c3878619f1bce5202965c2f08-0000.br-sao.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-sao01-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-18T14:56:11+0000",
+            "modifiedDate": "2021-10-25T10:56:57+0000"
+        },
+        "location": "sao01",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c8.private.sao01.containers.cloud.ibm.com:29296",
+        "monitoringURL": "",
+        "multiAzCapable": false,
+        "name": "pdns-prod-sao01",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "us-south",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c8.private.sao01.containers.cloud.ibm.com:29296",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "sao01"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2021-08-27T13:22:46+0000",
+        "crn": "eu-fr2:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:c4kee9nb09jm23gb8jh0::",
+        "datacenter": "par04",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "c4kee9nb09jm23gb8jh0",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-bnpp-bastion-ce01013c3878619f1bce5202965c2f08-0000.eu-fr2.containers.appdomain.cloud",
+            "message": "Some Ingress components are in warning state check `ibmcloud ks ingress status-report get` command.",
+            "secretName": "pdns-prod-bnpp-bastion-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "warning"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-19T15:33:03+0000",
+            "modifiedDate": "2021-08-27T13:23:36+0000"
+        },
+        "location": "par",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c101.private.eu-fr2.containers.cloud.ibm.com:31222",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-bnpp-bastion",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "eu-fr2",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c101.private.eu-fr2.containers.cloud.ibm.com:31222",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 3,
+        "workerZones": [
+            "par04"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2021-07-14T22:03:30+0000",
+        "crn": "eu-fr2:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:c3nlucib0h8ar8iu54eg::",
+        "datacenter": "par04",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "c3nlucib0h8ar8iu54eg",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-par04-ce01013c3878619f1bce5202965c2f08-0000.eu-fr2.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-par04-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-19T19:52:17+0000",
+            "modifiedDate": "2021-07-14T22:04:20+0000"
+        },
+        "location": "Paris",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c101.private.eu-fr2.containers.cloud.ibm.com:31524",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-par04",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "eu-fr2",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c101.private.eu-fr2.containers.cloud.ibm.com:31524",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "par04"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2021-07-14T22:10:25+0000",
+        "crn": "eu-fr2:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:c3nm1kbb0sl4s4qu54f0::",
+        "datacenter": "par05",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "c3nm1kbb0sl4s4qu54f0",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-par05-ce01013c3878619f1bce5202965c2f08-0000.eu-fr2.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-par05-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-19T23:13:04+0000",
+            "modifiedDate": "2021-07-14T22:10:47+0000"
+        },
+        "location": "Paris",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c101.private.eu-fr2.containers.cloud.ibm.com:31175",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-par05",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "eu-fr2",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c101.private.eu-fr2.containers.cloud.ibm.com:31175",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "par05"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2021-07-14T22:12:23+0000",
+        "crn": "eu-fr2:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:c3nm2hob0h1r1r2u54fg::",
+        "datacenter": "par06",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "c3nm2hob0h1r1r2u54fg",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-par06-ce01013c3878619f1bce5202965c2f08-0000.eu-fr2.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-par06-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-19T17:50:56+0000",
+            "modifiedDate": "2021-07-14T22:13:17+0000"
+        },
+        "location": "Paris",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c101.private.eu-fr2.containers.cloud.ibm.com:32677",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-par06",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "eu-fr2",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c101.private.eu-fr2.containers.cloud.ibm.com:32677",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "par06"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-30T18:21:10+0000",
+            "actionTriggerDate": "2020-07-30T18:06:31+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-10-22T16:01:51+0000",
+        "crn": "eu-gb:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bmnifrrl0qljosn9qp3g::",
+        "datacenter": "lon04",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bmnifrrl0qljosn9qp3g",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-lon04.eu-gb.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-lon04",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-16T02:22:11+0000",
+            "modifiedDate": "2019-10-22T16:02:47+0000"
+        },
+        "location": "London",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c1.private.eu-gb.containers.cloud.ibm.com:24383",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-lon04",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "eu-gb",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c1.private.eu-gb.containers.cloud.ibm.com:24383",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "lon04"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-30T16:22:43+0000",
+            "actionTriggerDate": "2020-07-30T16:07:13+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-10-22T16:05:17+0000",
+        "crn": "eu-gb:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bmnihffl0jjv63n9qp40::",
+        "datacenter": "lon05",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bmnihffl0jjv63n9qp40",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-lon05.eu-gb.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-lon05",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-16T06:45:37+0000",
+            "modifiedDate": "2019-10-22T16:06:09+0000"
+        },
+        "location": "London",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c1.private.eu-gb.containers.cloud.ibm.com:22792",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-lon05",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "eu-gb",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c1.private.eu-gb.containers.cloud.ibm.com:22792",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "lon05"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-30T21:24:56+0000",
+            "actionTriggerDate": "2020-07-30T21:06:27+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-10-22T16:06:05+0000",
+        "crn": "eu-gb:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bmnihrel0k9fc6f9qp4g::",
+        "datacenter": "lon06",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bmnihrel0k9fc6f9qp4g",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-lon06.eu-gb.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-lon06",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-15T20:50:49+0000",
+            "modifiedDate": "2019-10-22T16:07:05+0000"
+        },
+        "location": "London",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c1.private.eu-gb.containers.cloud.ibm.com:24321",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-lon06",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "eu-gb",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c1.private.eu-gb.containers.cloud.ibm.com:24321",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "lon06"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2021-10-26T06:22:42+0000",
+        "crn": "ca-tor:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:c5rptchr0u9g202ohbv0::",
+        "datacenter": "tor04",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "c5rptchr0u9g202ohbv0",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-tor04-ce01013c3878619f1bce5202965c2f08-0000.ca-tor.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-tor04-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-14T21:45:04+0000",
+            "modifiedDate": "2021-10-26T06:23:05+0000"
+        },
+        "location": "tor",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c103.private.ca-tor.containers.cloud.ibm.com:30686",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-tor04",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "ca-tor",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c103.private.ca-tor.containers.cloud.ibm.com:30686",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "tor04"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2021-10-26T06:23:39+0000",
+        "crn": "ca-tor:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:c5rptqrr0fb5617cei10::",
+        "datacenter": "tor05",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "c5rptqrr0fb5617cei10",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-tor05-ce01013c3878619f1bce5202965c2f08-0000.ca-tor.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-tor05-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-14T21:49:15+0000",
+            "modifiedDate": "2021-10-26T06:24:31+0000"
+        },
+        "location": "tor",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c103.private.ca-tor.containers.cloud.ibm.com:31306",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-tor05",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "ca-tor",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c103.private.ca-tor.containers.cloud.ibm.com:31306",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "tor05"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-28T21:08:27+0000",
+            "actionTriggerDate": "2020-07-28T20:54:53+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-10-25T16:23:54+0000",
+        "crn": "jp-tok:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bmpi36jt00asg11ii4bg::",
+        "datacenter": "tok02",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bmpi36jt00asg11ii4bg",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-tok02.jp-tok.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-tok02",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-14T16:44:06+0000",
+            "modifiedDate": "2019-10-25T16:24:17+0000"
+        },
+        "location": "tok",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c1.private.jp-tok.containers.cloud.ibm.com:29492",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-tok02",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "jp-tok",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c1.private.jp-tok.containers.cloud.ibm.com:29492",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "tok02"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-28T16:13:00+0000",
+            "actionTriggerDate": "2020-07-28T15:54:21+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-10-25T16:25:23+0000",
+        "crn": "jp-tok:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bmpi3sut02p1eld8fojg::",
+        "datacenter": "tok04",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bmpi3sut02p1eld8fojg",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-tok04.jp-tok.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-tok04",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-14T22:04:15+0000",
+            "modifiedDate": "2019-10-25T16:25:46+0000"
+        },
+        "location": "tok",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c1.private.jp-tok.containers.cloud.ibm.com:27471",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-tok04",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "jp-tok",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c1.private.jp-tok.containers.cloud.ibm.com:27471",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "tok04"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-28T20:37:20+0000",
+            "actionTriggerDate": "2020-07-28T20:24:44+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-10-25T16:26:32+0000",
+        "crn": "jp-tok:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bmpi4e5t0aaoe3v2hjj0::",
+        "datacenter": "tok05",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bmpi4e5t0aaoe3v2hjj0",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-tok05.jp-tok.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-tok05",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-15T04:13:29+0000",
+            "modifiedDate": "2019-10-25T16:27:55+0000"
+        },
+        "location": "tok",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c1.private.jp-tok.containers.cloud.ibm.com:30179",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-tok05",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "jp-tok",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c1.private.jp-tok.containers.cloud.ibm.com:30179",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "tok05"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2020-12-21T17:00:24+0000",
+        "crn": "jp-osa:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bvgd9a7o0utgtlqimqa0::",
+        "datacenter": "osa21",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bvgd9a7o0utgtlqimqa0",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-osa21-ce01013c3878619f1bce5202965c2f08-0000.osa21.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-osa21-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-14T21:26:16+0000",
+            "modifiedDate": "2020-12-21T17:00:47+0000"
+        },
+        "location": "Osaka",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c102.private.jp-osa.containers.cloud.ibm.com:30280",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-osa21",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "jp-osa",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c102.private.jp-osa.containers.cloud.ibm.com:30280",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "osa21"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2020-12-21T17:05:31+0000",
+        "crn": "jp-osa:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bvgdbmso016h4meaanhg::",
+        "datacenter": "osa22",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bvgdbmso016h4meaanhg",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-osa22-ce01013c3878619f1bce5202965c2f08-0000.osa22.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-osa22-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-14T19:37:58+0000",
+            "modifiedDate": "2020-12-21T17:06:06+0000"
+        },
+        "location": "osa",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c102.private.jp-osa.containers.cloud.ibm.com:31403",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-osa22",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "jp-osa",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c102.private.jp-osa.containers.cloud.ibm.com:31403",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "osa22"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2020-12-21T17:04:36+0000",
+        "crn": "jp-osa:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bvgdb95o0e71mgmaanh0::",
+        "datacenter": "osa23",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bvgdb95o0e71mgmaanh0",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-osa23-ce01013c3878619f1bce5202965c2f08-0000.osa23.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-osa23-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-14T19:37:31+0000",
+            "modifiedDate": "2020-12-21T17:04:59+0000"
+        },
+        "location": "osa",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c102.private.jp-osa.containers.cloud.ibm.com:31684",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-osa23",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "jp-osa",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c102.private.jp-osa.containers.cloud.ibm.com:31684",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "osa23"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-07-30T15:12:06+0000",
+            "actionTriggerDate": "2020-07-30T14:54:38+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-08-06T17:03:47+0000",
+        "crn": "eu-de:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bl4r5ssf0dsm5glkkfc0::",
+        "datacenter": "fra02",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bl4r5ssf0dsm5glkkfc0",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-fra02.eu-de.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-fra02",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-17T03:42:57+0000",
+            "modifiedDate": "2019-08-06T17:04:55+0000"
+        },
+        "location": "fra",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c2.private.eu-de.containers.cloud.ibm.com:23088",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-fra02",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "eu-de",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c2.private.eu-de.containers.cloud.ibm.com:23088",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "fra02"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-08-03T22:42:12+0000",
+            "actionTriggerDate": "2020-08-03T22:24:45+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-08-06T17:04:47+0000",
+        "crn": "eu-de:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bl4r6bqf0beit99c1s0g::",
+        "datacenter": "fra04",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bl4r6bqf0beit99c1s0g",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-fra04.eu-de.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-fra04",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-17T03:22:53+0000",
+            "modifiedDate": "2019-08-06T17:05:48+0000"
+        },
+        "location": "Frankfurt",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c2.private.eu-de.containers.cloud.ibm.com:30459",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-fra04",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "eu-de",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c2.private.eu-de.containers.cloud.ibm.com:30459",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "fra04"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "2020-08-03T18:16:02+0000",
+            "actionTriggerDate": "2020-08-03T17:54:42+0000",
+            "status": "ready_for_rotation"
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2019-08-06T17:05:39+0000",
+        "crn": "eu-de:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:bl4r6ouf01idgd0g296g::",
+        "datacenter": "fra05",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "bl4r6ouf01idgd0g296g",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-fra05.eu-de.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-fra05",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-17T04:03:58+0000",
+            "modifiedDate": "2019-08-06T17:06:48+0000"
+        },
+        "location": "fra",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c2.private.eu-de.containers.cloud.ibm.com:28531",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-fra05",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "eu-de",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c2.private.eu-de.containers.cloud.ibm.com:28531",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "fra05"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2021-10-26T07:57:59+0000",
+        "crn": "br-sao:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:c5rra1rz0113ne4n2k9g::",
+        "datacenter": "sao04",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "c5rra1rz0113ne4n2k9g",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-sao04-ce01013c3878619f1bce5202965c2f08-0000.br-sao.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-sao04-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-14T17:54:53+0000",
+            "modifiedDate": "2021-10-26T07:58:36+0000"
+        },
+        "location": "Sao Paulo",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c103.private.br-sao.containers.cloud.ibm.com:30654",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-sao04",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "br-sao",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c103.private.br-sao.containers.cloud.ibm.com:30654",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "sao04"
+        ],
+        "worker_vlans": null
+    },
+    {
+        "addons": [
+            {
+                "name": "csutil",
+                "version": "1.0.0"
+            },
+            {
+                "name": "istio",
+                "version": "1.14"
+            }
+        ],
+        "caCertRotationStatus": {
+            "actionCompletedDate": "",
+            "actionTriggerDate": "",
+            "status": ""
+        },
+        "calicoIPAutodetectionConfig": "",
+        "createdDate": "2021-10-26T07:59:15+0000",
+        "crn": "br-sao:a/fff1cdf3dc1e4ec692a5f78bbb2584bc:c5rraksz01dau1sn2ka0::",
+        "datacenter": "sao05",
+        "disableAutoUpdate": false,
+        "entitlement": "",
+        "etcdPort": "",
+        "features": {
+            "keyProtectEnabled": true,
+            "pullSecretApplied": true
+        },
+        "id": "c5rraksz01dau1sn2ka0",
+        "imageSecurityEnabled": false,
+        "infrastructureTopology": "",
+        "ingress": {
+            "hostname": "pdns-prod-sao05-ce01013c3878619f1bce5202965c2f08-0000.br-sao.containers.appdomain.cloud",
+            "message": "All Ingress components are healthy.",
+            "secretName": "pdns-prod-sao05-ce01013c3878619f1bce5202965c2f08-0000",
+            "status": "healthy"
+        },
+        "isPaid": true,
+        "lifecycle": {
+            "masterHealth": "normal",
+            "masterState": "deployed",
+            "masterStatus": "Ready",
+            "masterStatusModifiedDate": "2022-12-14T19:12:09+0000",
+            "modifiedDate": "2021-10-26T07:59:40+0000"
+        },
+        "location": "Sao Paulo",
+        "masterKubeVersion": "1.23.15_1555",
+        "masterURL": "https://c103.private.br-sao.containers.cloud.ibm.com:31344",
+        "monitoringURL": "",
+        "multiAzCapable": true,
+        "name": "pdns-prod-sao05",
+        "podSubnet": "172.30.0.0/16",
+        "provider": "classic",
+        "region": "br-sao",
+        "resourceGroup": "43a66da84c6f4954989448b7d33a9f86",
+        "resourceGroupName": "Default",
+        "serviceEndpoints": {
+            "privateServiceEndpointEnabled": true,
+            "privateServiceEndpointURL": "https://c103.private.br-sao.containers.cloud.ibm.com:31344",
+            "publicServiceEndpointEnabled": false,
+            "publicServiceEndpointURL": ""
+        },
+        "serviceID": "",
+        "serviceName": "",
+        "serviceSubnet": "172.21.0.0/16",
+        "state": "normal",
+        "status": "All Workers Normal",
+        "supportedOperatingSystems": null,
+        "targetVersion": "1.23.15_1555",
+        "type": "kubernetes",
+        "versionEOS": "",
+        "virtualPrivateEndpointURL": "",
+        "vlans": null,
+        "vpcs": null,
+        "workerCount": 8,
+        "workerZones": [
+            "sao05"
+        ],
+        "worker_vlans": null
+    }
+]
