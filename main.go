@@ -13,15 +13,27 @@ import (
 
 func main() {
 
-	fw, err := local.NewLocalFileWriter("json_schema.parquet")
+	inputFileName := ""
+	outputFileName := "output.parquet"
+
+	if len(os.Args) > 1 {
+		fmt.Println(os.Args, len(os.Args))
+		inputFileName = os.Args[1]
+		if len(os.Args) > 2 {
+			outputFileName = os.Args[2]
+		}
+	} else {
+		log.Println("Input file name missing")
+		return
+	}
+
+	fw, err := local.NewLocalFileWriter(outputFileName)
 	if err != nil {
 		log.Println("Can't create file", err)
 		return
 	}
 
-	jsonFilePtr := "example/file.json"
-
-	file, err := os.Open(jsonFilePtr)
+	file, err := os.Open(inputFileName)
 	if err != nil {
 		log.Fatal(err)
 	}
