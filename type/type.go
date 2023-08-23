@@ -11,7 +11,7 @@ import (
 )
 
 func BuildMedadata(data map[string]interface{}) string {
-	metadata := (`{"Tag":"name=Spark_schema","Fields":[`)
+	metadata := (`{"Tag":"name=parquet-go","Fields":[`)
 	for name, val := range data {
 		if val == nil {
 			metadata += Read(name, reflect.TypeOf(""), val)
