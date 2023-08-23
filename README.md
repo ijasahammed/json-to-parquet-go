@@ -2,7 +2,7 @@
 Convert json file to parquet file
 ## Usage :
 ```
-Usage: go run <JSON> <PARQUET>
+Usage: go run main <JSON> <PARQUET>
 
 Arguments:
   <JSON>     Input JSON file
