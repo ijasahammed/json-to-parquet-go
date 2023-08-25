@@ -5,7 +5,8 @@ import (
 	"fmt"
 	"log"
 	"os"
-	datatype "parquet-go/type"
+	"parquet-go/datatype"
+	"parquet-go/jsonstruct"
 
 	"github.com/xitongsys/parquet-go-source/local"
 	"github.com/xitongsys/parquet-go/writer"
@@ -17,19 +18,18 @@ func main() {
 	outputFileName := "output.parquet"
 
 	if len(os.Args) > 1 {
-		fmt.Println(os.Args, len(os.Args))
 		inputFileName = os.Args[1]
 		if len(os.Args) > 2 {
 			outputFileName = os.Args[2]
 		}
 	} else {
-		log.Println("Input file name missing")
+		log.Fatal("Input file name missing")
 		return
 	}
 
 	fw, err := local.NewLocalFileWriter(outputFileName)
 	if err != nil {
-		log.Println("Can't create file", err)
+		log.Fatal("Can't create file", err)
 		return
 	}
 
@@ -43,26 +43,28 @@ func main() {
 		log.Fatal(err)
 	}
 
-	metadata := datatype.BuildMedadata(data[0])
+	jsonStruct := jsonstruct.BuildJsonStruct(data)
+
+	metadata := datatype.BuildMedadata(jsonStruct)
 
 	fmt.Println(metadata)
 
 	pw, err := writer.NewJSONWriter(metadata, fw, 4)
 	if err != nil {
-		log.Println("Can't create json writer : ", err)
+		log.Fatal("Can't create json writer : ", err)
 		return
 	}
 	for _, v := range data {
 		json, _ := json.Marshal(v)
 		if err = pw.Write(string(json)); err != nil {
-			log.Println("Write error", err)
+			log.Fatal("Write error", err)
 			break
 		}
 	}
 	if err = pw.WriteStop(); err != nil {
-		log.Println("WriteStop error", err)
+		log.Fatal("WriteStop error", err)
 	}
-	log.Println("Write Finished")
+	log.Fatal("Write Finished")
 	fw.Close()
 
 }

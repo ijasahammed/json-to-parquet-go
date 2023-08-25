@@ -6,17 +6,17 @@ package datatype
 
 import (
 	"fmt"
-	"reflect"
 	"strings"
 )
 
 func BuildMedadata(data map[string]interface{}) string {
 	metadata := (`{"Tag":"name=parquet-go","Fields":[`)
 	for name, val := range data {
+		mapVal := val.(map[string]interface{})
 		if val == nil {
-			metadata += Read(name, reflect.TypeOf(""), val)
+			metadata += Read(name, mapVal)
 		} else {
-			metadata += Read(name, reflect.TypeOf(val), val)
+			metadata += Read(name, mapVal)
 		}
 	}
 	metadata = strings.TrimSuffix(metadata, ",")
@@ -24,48 +24,40 @@ func BuildMedadata(data map[string]interface{}) string {
 	return metadata
 }
 
-func Read(name string, t reflect.Type, val any) string {
-
-	switch t.Kind() {
-	case reflect.Slice:
-		return readFromSlice(name, t, val)
-	case reflect.Map:
-		return readFromMap(name, t, val)
-	case reflect.Int, reflect.Int16, reflect.Int32, reflect.Int64, reflect.Int8:
+func Read(name string, val map[string]interface{}) string {
+	switch val["type"] {
+	case "LIST":
+		return readFromSlice(name, val["value"].(map[string]interface{}))
+	case "MAP":
+		return readFromMap(name, val["value"].(map[string]interface{}))
+	case "INT":
 		return fmt.Sprintf(`{"Tag":"name=%s, type=INT64,repetitiontype=OPTIONAL"},`, name)
-	case reflect.Float32, reflect.Float64:
+	case "FLOAT":
 		return fmt.Sprintf(`{"Tag":"name=%s, type=FLOAT,repetitiontype=OPTIONAL"},`, name)
-	case reflect.Bool:
+	case "BOOLEAN":
 		return fmt.Sprintf(`{"Tag":"name=%s, type=BOOLEAN,repetitiontype=OPTIONAL"},`, name)
-	case reflect.String:
+	case "BYTE_ARRAY":
 		return fmt.Sprintf(`{"Tag":"name=%s, type=BYTE_ARRAY, convertedtype=UTF8, repetitiontype=OPTIONAL"},`, name)
 	}
-	fmt.Println("ELseee caseee")
+
+	fmt.Println("ELseee caseee", val["type"])
 	return ""
 }
 
-func readFromSlice(name string, t reflect.Type, val any) string {
+func readFromSlice(name string, val map[string]interface{}) string {
 
-	new_val := val.([]interface{})
 	mapData := fmt.Sprintf(`{"Tag":"name=%s, type=LIST,repetitiontype=OPTIONAL","Fields":[`, name)
-
-	for _, v := range new_val {
-		mapData += Read("element", reflect.TypeOf(v), v)
-		break
-	}
+	mapData += Read("element", val)
 	mapData = strings.TrimSuffix(mapData, ",")
 	mapData += `]},`
 	return mapData
 }
 
-func readFromMap(name string, t reflect.Type, val any) string {
-	new_val := val.(map[string]interface{})
+func readFromMap(name string, val map[string]interface{}) string {
 	mapData := fmt.Sprintf(`{"Tag":"name=%s,repetitiontype=OPTIONAL","Fields":[`, name)
-
-	fmt.Println("parent :", name)
-	for key, v := range new_val {
-		fmt.Println("    map:", key)
-		mapData += Read(key, reflect.TypeOf(v), v)
+	for key, v := range val {
+		mapV := v.(map[string]interface{})
+		mapData += Read(key, mapV)
 	}
 	mapData = strings.TrimSuffix(mapData, ",")
 	mapData += `]},`
