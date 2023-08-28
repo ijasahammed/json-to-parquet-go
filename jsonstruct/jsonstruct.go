@@ -18,7 +18,7 @@ func BuildJsonStruct(data []map[string]interface{}) map[string]interface{} {
 
 			if _, exist := output[name]; exist {
 				keyPre := output[name].(map[string]interface{})
-				if keyPre["type"] == "MAP" {
+				if keyPre["type"] == "MAP" || keyPre["type"] == "LIST" {
 					preValue = keyPre["value"].(map[string]interface{})
 				}
 
@@ -37,7 +37,7 @@ func Read(name string, t reflect.Type, val any, preValue map[string]interface{})
 
 	switch t.Kind() {
 	case reflect.Slice:
-		return "LIST", map[string]interface{}{"type": "LIST", "value": readFromSlice(name, t, val)}
+		return "LIST", map[string]interface{}{"type": "LIST", "value": readFromSlice(name, t, val, preValue)}
 	case reflect.Map:
 		return "MAP", map[string]interface{}{"type": "MAP", "value": readFromMap(name, t, val, preValue)}
 	case reflect.Int, reflect.Int16, reflect.Int32, reflect.Int64, reflect.Int8:
@@ -53,10 +53,14 @@ func Read(name string, t reflect.Type, val any, preValue map[string]interface{})
 	return "", nil
 }
 
-func readFromSlice(name string, t reflect.Type, val any) map[string]interface{} {
+func readFromSlice(name string, t reflect.Type, val any, preValue map[string]interface{}) map[string]interface{} {
 
 	resultData := make(map[string]interface{}, 0)
-	preValue := make(map[string]interface{}, 0)
+	if typeVal, exists := preValue["type"]; !exists || !(typeVal == "MAP") {
+		preValue = make(map[string]interface{}, 0)
+	} else {
+		preValue = preValue["value"].(map[string]interface{})
+	}
 	new_val := val.([]interface{})
 	var dataType string
 	for _, v := range new_val {
@@ -78,7 +82,7 @@ func readFromMap(name string, t reflect.Type, val any, preValue map[string]inter
 		keyPreValue := make(map[string]interface{}, 0)
 		if _, exits := mapData[key]; exits {
 			keyPre := mapData[key].(map[string]interface{})
-			if keyPre["type"] == "MAP" {
+			if keyPre["type"] == "MAP" || keyPre["type"] == "LIST" {
 				keyPreValue = keyPre["value"].(map[string]interface{})
 			}
 		}
