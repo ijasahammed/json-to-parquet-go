@@ -43,7 +43,11 @@ func Read(name string, t reflect.Type, val any, preValue map[string]interface{})
 	case reflect.Int, reflect.Int16, reflect.Int32, reflect.Int64, reflect.Int8:
 		return "INT", map[string]interface{}{"type": "INT", "value": 1}
 	case reflect.Float32, reflect.Float64:
-		return "FLOAT", map[string]interface{}{"type": "FLOAT", "value": 1.0}
+		if _, ok := val.(int); ok {
+			return "FLOAT", map[string]interface{}{"type": "FLOAT", "value": 1.0}
+		} else {
+			return "INT", map[string]interface{}{"type": "INT", "value": 1}
+		}
 	case reflect.Bool:
 		return "BOOLEAN", map[string]interface{}{"type": "BOOLEAN", "value": true}
 	case reflect.String:

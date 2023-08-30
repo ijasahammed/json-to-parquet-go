@@ -15,7 +15,7 @@ import (
 func main() {
 
 	inputFileName := ""
-	outputFileName := "output.parquet"
+	outputFileName := "example/output.parquet"
 
 	if len(os.Args) > 1 {
 		inputFileName = os.Args[1]
