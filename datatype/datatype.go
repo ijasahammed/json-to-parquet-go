@@ -47,7 +47,11 @@ func Read(name string, val map[string]interface{}) string {
 func readFromSlice(name string, val map[string]interface{}) string {
 
 	mapData := fmt.Sprintf(`{"Tag":"name=%s, type=LIST,repetitiontype=OPTIONAL","Fields":[`, name)
-	mapData += Read("element", val)
+	if len(val) > 0 {
+		mapData += Read("element", val)
+	} else {
+		mapData += Read("element", map[string]interface{}{"type": "BYTE_ARRAY", "value": "s"})
+	}
 	mapData = strings.TrimSuffix(mapData, ",")
 	mapData += `]},`
 	return mapData
