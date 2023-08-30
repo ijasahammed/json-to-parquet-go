@@ -86,6 +86,9 @@ func readFromMap(name string, t reflect.Type, val any, preValue map[string]inter
 				keyPreValue = keyPre["value"].(map[string]interface{})
 			}
 		}
+		if len(keyPreValue) > 0 && reflect.TypeOf(v).Kind() == reflect.Slice && len(v.([]interface{})) == 0 {
+			continue
+		}
 		_, mapData[key] = Read(key, reflect.TypeOf(v), v, keyPreValue)
 
 	}
